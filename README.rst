@@ -1,3 +1,7 @@
+This fork of requests-html changes how requests_html.HTML.render() works: the JavaScript code specified in the script argument in render() will be executed AFTER the page has been rendered (i.e. the original JavaScript code on the HTML page has executed first).
+
+This is a deviation from the vision the maintainers of the original repo (see here: https://github.com/psf/requests-html/issues/285).
+
 Requests-HTML: HTML Parsing for Humans™
 =======================================
 

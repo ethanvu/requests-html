@@ -519,10 +519,6 @@ class HTML(BaseParser):
             else:
                 await page.goto(f'data:text/html,{self.html}', options={'timeout': int(timeout * 1000)})
 
-            result = None
-            if script:
-                result = await page.evaluate(script)
-
             if scrolldown:
                 for _ in range(scrolldown):
                     await page._keyboard.down('PageDown')
@@ -532,6 +528,10 @@ class HTML(BaseParser):
 
             if scrolldown:
                 await page._keyboard.up('PageDown')
+
+            result = None
+            if script:
+                result = await page.evaluate(script)
 
             # Return the content of the page, JavaScript evaluated.
             content = await page.content()
