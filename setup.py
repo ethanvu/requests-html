@@ -12,12 +12,12 @@ from shutil import rmtree
 from setuptools import setup, Command
 
 # Package meta-data.
-NAME = 'requests-html'
+NAME = 'requests-html-evu'
 DESCRIPTION = 'HTML Parsing for Humans.'
-URL = 'https://github.com/psf/requests-html'
-EMAIL = 'me@kennethreitz.org'
-AUTHOR = 'Kenneth Reitz'
-VERSION = '0.10.0'
+URL = 'https://github.com/ethanvu/requests-html'
+EMAIL = 'ethanhuynhvu@gmail.com'
+AUTHOR = 'Ethan Vu'
+VERSION = '1.0.0'
 
 # What packages are required for this module to be executed?
 REQUIRED = [
